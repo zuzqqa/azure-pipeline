@@ -1,5 +1,5 @@
 pool:
-  name: 'Self-hosted'
+  name: 'SH'
 steps:
 - task: AzureCLI@2
   inputs:
