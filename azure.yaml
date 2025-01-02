@@ -3,7 +3,7 @@ pool:
 steps:
 - task: AzureCLI@2
   inputs:
-    azureSubscription: 'Your Azure Subscription'
+    azureSubscription: 'MyConnection'
     scriptType: 'bash'
     scriptLocation: 'inlineScript'
     inlineScript: |
