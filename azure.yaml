@@ -1,0 +1,10 @@
+pool:
+  name: 'Self-hosted'
+steps:
+- task: AzureCLI@2
+  inputs:
+    azureSubscription: 'Your Azure Subscription'
+    scriptType: 'bash'
+    scriptLocation: 'inlineScript'
+    inlineScript: |
+      az aks create --resource-group MyResources --name MyAKSCluster --node-count 1 --enable-addons monitoring --generate-ssh-keys
